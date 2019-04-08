@@ -1,0 +1,40 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="Z:\user\myproject\record\"
+ProjectType=Executable
+CPUFamily=TMS320C64XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="DspBiosBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="c6416dskinit.c"
+Source="C:\CCStudio_v3.1\C6000\cgtools\lib\rts6400.lib"
+Source="C:\CCStudio_v3.1\C6000\csl\lib\csl6416.lib"
+Source="C:\CCStudio_v3.1\C6000\dsk6416\lib\dsk6416bsl.lib"
+Source="record.c"
+Source="Vectors_poll.asm"
+Source="C6416dsk.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -s -fr"$(Proj_dir)\Debug" -d"CHIP_6416" -mv6400 --mem_model:data=far
+
+["Compiler" Settings: "Release"]
+Options=-o3 -fr"$(Proj_dir)\Release" -mv6400
+
+["Linker" Settings: "Debug"]
+Options=-c -o".\Debug\record.out" -x
+
+["Linker" Settings: "Release"]
+Options=-c -m".\Release\record.map" -o".\Release\record.out" -w -x
+
+["C6416dsk.cmd" Settings: "Debug"]
+LinkOrder=1
+
+["C6416dsk.cmd" Settings: "Release"]
+LinkOrder=1
+

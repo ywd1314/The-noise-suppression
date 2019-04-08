@@ -1,0 +1,8 @@
+-z -c -o"./Debug/record.out" -x -i"C:/CCStudio_v3.1/C6000/rtdx/lib" -i"C:/CCStudio_v3.1/C6000/csl/lib" -i"C:/CCStudio_v3.1/C6000/xdais/lib" -i"C:/CCStudio_v3.1/C6000/bios/lib" -i"C:/CCStudio_v3.1/C6000/cgtools/lib"
+"Z:\user\LCY_V3.0\record\C6416dsk.cmd"
+"Z:\user\LCY_V3.0\record\Debug\c6416dskinit.obj"
+"Z:\user\LCY_V3.0\record\Debug\record.obj"
+"Z:\user\LCY_V3.0\record\Debug\Vectors_poll.obj"
+"C:\CCStudio_v3.1\C6000\cgtools\lib\rts6400.lib"
+"C:\CCStudio_v3.1\C6000\csl\lib\csl6416.lib"
+"C:\CCStudio_v3.1\C6000\dsk6416\lib\dsk6416bsl.lib"
